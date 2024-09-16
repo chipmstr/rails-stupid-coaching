@@ -1,0 +1,21 @@
+<div class="container mt-5" style="width: 400px;">
+  <div class="mb-3">
+    <p class="lead text-start">
+      <%= @question %>
+    </p>
+    <p class="text-start mb-4">-You</p>
+
+    <!-- coach answers with beige background -->
+    <div style="background-color: #f5f5dc; padding: 10px; border-radius: 5px;">
+      <p class="lead text-start mb-1">
+        <%= @answer %>
+      </p>
+      <p class="text-start mb-0">-Your coach</p>
+    </div>
+  </div>
+
+  <!-- link to go back -->
+  <div class="text-start mt-4">
+    <%= link_to 'Ask a new question', ask_path, style: 'color: blue; text-decoration: none;' %>
+  </div>
+</div>
